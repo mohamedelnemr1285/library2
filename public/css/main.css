@@ -1,0 +1,10 @@
+/*start footer*/
+.footer{
+    background-color: #5a6268;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+/*end footer*/
