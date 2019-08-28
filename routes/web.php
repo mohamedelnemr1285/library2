@@ -30,4 +30,7 @@ Route::post('/save', 'studentcontroller@save')->name('save');
 Route::get('/book', 'bookcontroller@book')->name('book');
 Route::post('/book', 'bookcontroller@upload')->name('upload');
 
-Route::get('/borrow', 'borrowcontroller@borrow')->name('borrow');
+Route::get('/borrow/{id}', 'borrowcontroller@borrow')->name('borrow');
+
+//Route::get('/update', 'borrowcontroller@book')->name('student');
+Route::post('/update/{id}', 'borrowcontroller@update')->name('update');
