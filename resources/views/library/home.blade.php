@@ -43,7 +43,7 @@
                 <a class="nav-link" href="{{route('book')}}">Upload A Book</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('student')}}">Borrow A Book</a>
+                <a class="nav-link" href="{{route('borrow',$id)}}">Borrow A Book</a>
             </li>
         </ul>
     </div>

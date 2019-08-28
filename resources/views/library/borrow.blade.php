@@ -14,7 +14,7 @@
                         <label for="Name of Students">Name of Students</label>
 
                         <select name="student">
-                            @foreach ($students as  $student)
+                            @foreach ($update as  $student)
                             <option value="">{{ucwords( $student->name)}}</option>
                             @endforeach
 
