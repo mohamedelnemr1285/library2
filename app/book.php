@@ -8,9 +8,9 @@ class book extends Model
 {
     //
 
-    public function hasmany(){
-        return $this->hasMany('App\student');
-
-    }
+//    public function hasmany(){
+//        return $this->hasMany('App\student');
+//
+//    }
 
 }

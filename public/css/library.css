@@ -1,0 +1,42 @@
+/*start libarayhome.blade*/
+
+.border.border-success.row{
+    background-color: #BEE9EA;
+
+}
+
+.col-md-6{
+
+    padding-left: 0;
+}
+
+h5.title{
+    margin-bottom: 60px;
+}
+
+a.btn.btn-primary{
+    margin-left: 45px;
+}
+
+.info.col-md-5.align-self-center {
+    margin-left: 60px;
+}
+
+.border.border-success.row {
+
+    margin-top: 25px;
+}
+
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+a.btn.btn-primary {
+    padding: 6px 20px;
+    margin-left: 1px;
+}
+
+
+/*end libarayhome.blade*/
