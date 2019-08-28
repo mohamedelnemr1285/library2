@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 center">
 
-                <form action="{{route('update',$students->id  )}}" method="POST" role="form" enctype="multipart/form-data">
+                <form action="{{route('update',$update->id  )}}" method="POST" role="form" enctype="multipart/form-data">
                 <input type="hidden" name="_method">
                     {{csrf_field()}}
                     <legend>Borrow A book</legend>

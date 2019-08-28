@@ -11,11 +11,11 @@ class borrowcontroller extends Controller
      * @param $id
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function borrow($id){
-
-        $students = student::all($id);
-        return view ('library.borrow',compact('students'));
-    }
+//    public function borrow($id){
+//
+//        $students = student::all($id);
+//        return view ('library.borrow',compact('students'));
+//    }
 
     public function book($id){
 
@@ -41,7 +41,7 @@ class borrowcontroller extends Controller
         $update->count_of_dayes = $request->input('dayes')
         ]);
 
-        return view('library.borrow');
+        return view("{{route('student')}}");
 }
 
 
