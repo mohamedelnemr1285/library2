@@ -5,14 +5,15 @@
         <div class="row">
             <div class="col-md-8 center">
 
-                <form action="{{route('home')}}" method="POST" role="form" enctype="multipart/form-data">
+                <form action="{{route('update',$students->id  )}}" method="POST" role="form" enctype="multipart/form-data">
+                <input type="hidden" name="_method">
                     {{csrf_field()}}
                     <legend>Borrow A book</legend>
 
                     <div class="form-group">
                         <label for="Name of Students">Name of Students</label>
 
-                        <select>
+                        <select name="student">
                             @foreach ($students as  $student)
                             <option value="">{{ucwords( $student->name)}}</option>
                             @endforeach
@@ -24,7 +25,7 @@
 
                     <div class="form-group">
                         <label for="Borrow Or Not">Borrow Or Not</label>
-                        <select>
+                        <select name="borrow">
                             <option>Borrow</option>
                             <option>Not Borrow</option>
                         </select>
@@ -32,7 +33,7 @@
 
                     <div class="form-group">
                         <label for="Count Of Dayes Borrow A Book">Count Of Dayes Borrow A Book</label>
-                        <select>
+                        <select name="dayes">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
