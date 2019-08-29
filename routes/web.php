@@ -32,6 +32,6 @@ Route::post('/book', 'bookcontroller@upload')->name('upload');
 
 //Route::get('/borrow', 'borrowcontroller@borrow')->name('borrow');
 
-Route::get('/borrow', 'borrowcontroller@edit ')->name('borrow');
-Route::patch('/update/{id}', 'borrowcontroller@update')->name('update');
+Route::get('/books/{id}/edit', 'borrowcontroller@edit')->name('borrow');
+Route::post('/books/{id}/update', 'borrowcontroller@update')->name('update');
 
