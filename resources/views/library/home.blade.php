@@ -1,6 +1,6 @@
-{{--@extends('layouts.app')--}}
 
 <!DOCTYPE html>
+{{--@extends('layouts.app')--}}
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -17,19 +17,18 @@
     <script src="{{ asset('js/jquery-3.4.1.min.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel = "stylesheet" href= "{{ url('css/fontawesome.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href= "{{ url('css/font-awesome.min.css')}}">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel = "stylesheet" href= "{{ url('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{ public_path('css/main.css')}}"  type="text/css">
+    <link rel="stylesheet" href="{{ url('css/main.css')}}"  type="text/css">
 </head>
 <body>
 
 {{--start navbar--}}
 <nav class="navbar navbar-expand-lg " style="background-color: #e3f2fd;">
-    <a class="navbar-brand" href="{{url('home')}}">Home</a>
+    <a class="navbar-brand" href="{{url('home')}}"><i class="fa fa-2x fa-home"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

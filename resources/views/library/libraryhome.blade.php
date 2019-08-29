@@ -3,7 +3,10 @@
   <!DOCTYPE html>
 <head>
     <link href="{{ asset('css/library.css') }}" rel="stylesheet">
-    <link rel = "stylesheet" href= "{{ asset('css/fontawesome.min.css')}}" type="text/css">
+    <link rel = "stylesheet" href= "{{ url('css/font-awesome.min.css')}}">
+
+    <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
+    <script src="{{ asset('js/jquery-3.4.1.min.js') }}" defer></script>
 </head>
 
 <div class="container">
@@ -43,7 +46,7 @@
            </div>
 
             <div class="info col-md-5 align-self-center">
-             <i class="fa fa-lock"></i>
+             {{--<i class="fa fa-4x fa-home"></i>--}}
                <h5 class="title"><span>Title : </span>{{ ucwords($library->title)}} </h5>
                 <h5 class="title"><span>Author : </span> {{ucwords($library->author) }} </h5>
                 <a  href="{{route('borrow')}}" class=" btn btn-primary ">Borrow </a>
