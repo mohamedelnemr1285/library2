@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 use App\student;
 class book extends Model
 {
-    //
+    public function student(){
+        return $this->belongsTo('App\student');
 
-//    public function hasmany(){
-//        return $this->hasMany('App\student');
-//
-//    }
+    }
+
+
 
 }
