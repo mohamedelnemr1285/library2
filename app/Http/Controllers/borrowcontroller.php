@@ -17,14 +17,21 @@ class borrowcontroller extends Controller
 //        return view ('library.borrow',compact('students'));
 //    }
 
-    public function book($id){
+//    public function book($id){
+//
+////        $update = student::orderBy('created_at','asc')->get();
+//        $update = student::find($id);
+//        return view('library.borrow',compact('update'));
+//
+//    }
 
-//        $update = student::orderBy('created_at','asc')->get();
-        $update = student::find($id);
+
+    public function edit ($id){
+        $update = student::findOrFail($id);
         return view('library.borrow',compact('update'));
 
-    }
 
+    }
 
 
     public function update(Request $request , $id){

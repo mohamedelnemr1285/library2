@@ -15,7 +15,6 @@
     <div class="container">
     <div class="row">
         <div class="col-md-8 center">
-
 <form action="{{route('home')}}" method="POST" role="form">
     {{csrf_field()}}
     <legend>Register</legend>
@@ -34,7 +33,8 @@
 
     <div class="form-group">
         <label for="password">Email</label>
-        <input type="text" class="form-control" name="email" id="email" value="{{old('email')}}" placeholder="Enter Email...">    </div>
+        <input type="text" class="form-control" name="email" id="email" value="{{old('email')}}" placeholder="Enter Email...">
+    </div>
 
     <button type="submit" class="btn btn-primary">Login</button>
 </form>
