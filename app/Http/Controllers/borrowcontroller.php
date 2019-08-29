@@ -11,11 +11,12 @@ class borrowcontroller extends Controller
 
 
 
-//    public function borrow($id){
-//
-//        $students = student::all($id);
-//        return view ('library.borrow',compact('students'));
-//    }
+
+    public function borrow(){
+
+        $update = student::all();
+        return view ('libraryhome.borrow',compact('update'));
+    }
 
 //    public function book($id){
 //
@@ -26,9 +27,9 @@ class borrowcontroller extends Controller
 //    }
 
 
-    public function edit ($id){
-        $update = student::findOrFail($id);
-        return view('library.borrow',compact('update'));
+    public function edit (id $id){
+//        $update = student::findOrFail($id);
+        return view('library.borrow',compact('id'));
 
 
     }
@@ -36,7 +37,7 @@ class borrowcontroller extends Controller
 
     public function update(Request $request , $id){
 
-        $update = student::all($id);
+        $update = student::find($id);
 //        $update->name = $request->input('student');
 //        $update->borrow_or_not = $request->input('borrow');
 //        $update->count_of_days = $request->input('dayes');
