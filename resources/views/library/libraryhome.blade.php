@@ -38,16 +38,16 @@
     <div class="container">
         <div class="border border-success row">
 
-                <div class="justify-content-center col-md-6">
-                 <img width="350" height="450" src="image/{{ $library->image}}">
-                </div>
+          <div class="justify-content-center col-md-6">
+           <img width="350" height="450" src="image/{{ $library->image}}">
+           </div>
 
             <div class="info col-md-5 align-self-center">
-                <i class="fa fa-lock"></i>
-                    <h5 class="title"><span>Title : </span>{{ ucwords($library->title)}} </h5>
-                    <h5 class="title"><span>Author : </span> {{ucwords($library->author) }} </h5>
-                <a  href="{{route('borrow')}}" class=" btn btn-primary ">Borrow </a>
-                    <a  href="{{asset('image'.$library->image)}}" class=" btn btn-info">download</a>
+             <i class="fa fa-lock"></i>
+               <h5 class="title"><span>Title : </span>{{ ucwords($library->title)}} </h5>
+                <h5 class="title"><span>Author : </span> {{ucwords($library->author) }} </h5>
+                {{--<a  href="{{route('borrow',$id)}}" class=" btn btn-primary ">Borrow </a>--}}
+                 <a  href="{{asset('image'.$library->image)}}" class=" btn btn-info">download</a>
 
             </div>
 

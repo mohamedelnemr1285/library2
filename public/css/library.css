@@ -1,5 +1,9 @@
 /*start libarayhome.blade*/
 
+body{
+    background-color: lightcyan;
+}
+
 .border.border-success.row{
     background-color: #BEE9EA;
 
