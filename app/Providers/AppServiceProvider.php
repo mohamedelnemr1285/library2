@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $update = student::all();
-        view()->share('allstudents' ,$update );
+//        $update = student::all();
+//        view()->share('allstudents' ,$update );
     }
 }

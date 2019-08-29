@@ -23,7 +23,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel = "stylesheet" href= "{{ url('css/bootstrap.min.css')}}">
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ public_path('css/main.css')}}"  type="text/css">
 </head>
 <body>
 
@@ -95,7 +95,7 @@
 
 
 {{--start footer--}}
-<p class="footer">All Copy Rights &copy 2019 </p>
+<p class="footer" >All Copy Rights &copy 2019 </p>
 {{--end footer--}}
 </body>
 </html>

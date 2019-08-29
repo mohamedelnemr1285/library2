@@ -46,7 +46,7 @@
              <i class="fa fa-lock"></i>
                <h5 class="title"><span>Title : </span>{{ ucwords($library->title)}} </h5>
                 <h5 class="title"><span>Author : </span> {{ucwords($library->author) }} </h5>
-                {{--<a  href="{{route('borrow',$id)}}" class=" btn btn-primary ">Borrow </a>--}}
+                <a  href="{{route('borrow')}}" class=" btn btn-primary ">Borrow </a>
                  <a  href="{{asset('image'.$library->image)}}" class=" btn btn-info">download</a>
 
             </div>

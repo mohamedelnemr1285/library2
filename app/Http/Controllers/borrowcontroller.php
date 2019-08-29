@@ -19,7 +19,7 @@ class borrowcontroller extends Controller
 
     public function book($id){
 
-        $update = student::orderBy('created_at','asc')->get();
+//        $update = student::orderBy('created_at','asc')->get();
         $update = student::find($id);
         return view('library.borrow',compact('update'));
 
