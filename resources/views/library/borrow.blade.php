@@ -5,12 +5,12 @@
         <div class="row">
             <div class="col-md-8 center">
 
-                {!! form::model($update,array('method' =>'PATCH', 'action'=>['borrowcontroller@update',$update->id],'files=>true')) !!}
+                {{--{!! form::model($update,array('method' =>'PATCH', 'action'=>['updatecontroller@update',$update->id],'files=>true')) !!}--}}
 
 
-                {{--<form action="{{route('borrow',$update->id  )}}" method="POST" role="form" enctype="multipart/form-data">--}}
-                {{--{{method_field('PATCH')}}--}}
-                    {{--{{csrf_field()}}--}}
+                <form action="{{route('update')}}" method="POST" role="form" enctype="multipart/form-data">
+                {{method_field('PATCH')}}
+                    {{csrf_field()}}
                     <legend>Borrow A book</legend>
 
                     <div class="form-group">
